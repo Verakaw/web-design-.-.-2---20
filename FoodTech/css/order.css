@@ -1,0 +1,150 @@
+.order {
+  min-height: 500px;
+}
+
+.order.container {
+  width: 100%;
+  max-width: 1140px;
+  padding: 45px 12px;
+}
+
+.order .row {
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.order form,
+.order aside {
+  min-width: 0;
+}
+
+.order > h1 {
+  font-size: 32px;
+}
+
+.form-box,
+.order-summary {
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f0f4ff;
+}
+
+.form-box h2,
+.order-summary h2 {
+  margin: 0 0 16px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #777777;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.form-box h2 b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: white;
+  background: #288032;
+  font-size: 20px;
+}
+
+.form-control,
+.form-select {
+  border: 0;
+  border-radius: 10px;
+  font: 16px "Comfortaa", sans-serif;
+}
+
+.pay {
+  display: inline-block;
+  margin: 3px 18px 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  color: #766d6d;
+  font-size: 18px;
+}
+
+.pay input {
+  accent-color: #288032;
+}
+
+.order-summary p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.order-summary p b {
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.order-summary hr {
+  border-color: #777777;
+}
+
+.order-summary button {
+  width: 100%;
+  padding: 13px;
+  border: 0;
+  border-radius: 14px;
+  color: white;
+  background: #288032;
+  font: 13px "Comfortaa", sans-serif;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.order-summary button:hover {
+  box-shadow: 0 7px 16px #B2DAE2;
+}
+
+.order-summary button:active {
+  box-shadow: 0 10px 24px #A2D0CD;
+}
+
+.flatpickr-day.selected {
+  background: #288032;
+  border-color: #288032;
+}
+
+.order-success {
+  position: relative;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 55px;
+  border: 0;
+  border-radius: 24px;
+  background: #e8f6e8 url("../img/Rectangle 333.png") center/cover;
+  text-align: center;
+}
+
+.order-success h2 {
+  font-size: 24px;
+}
+
+.success-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: white;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+}

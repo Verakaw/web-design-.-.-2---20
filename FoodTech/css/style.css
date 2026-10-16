@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #000000;
+  background: #e8f6e8;
+  font: 16px/1.2 "Comfortaa", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header,
+main,
+footer {
+  max-width: 1280px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 14px clamp(20px, 11%, 140px);
+  border-radius: 0 0 35px 35px;
+  background: #e8f6e8;
+}
+
+.logo {
+  flex: 0 0 145px;
+  width: 145px;
+  padding: 20px 8px;
+  color: #288032;
+  background: #eff9f0 url("../img/Rectangle 416.png") center/cover;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.logo span {
+  color: #000000;
+}
+
+nav {
+  display: flex;
+  flex: 1 1 400px;
+  min-width: 0;
+  gap: 14px;
+}
+
+nav a {
+  flex: 1 1 90px;
+  min-width: 0;
+  padding: 14px clamp(12px, 2vw, 25px);
+  border-radius: 15px;
+  background: #a6caab;
+  text-align: center;
+  transition: .2s;
+}
+
+nav a:hover {
+  box-shadow: 0 7px 16px #B2DAE2;
+}
+
+nav a:active {
+  box-shadow: 0 10px 24px #A2D0CD;
+}
+
+main {
+  width: 100%;
+  padding: 45px clamp(20px, 11%, 140px);
+  background: linear-gradient(#e8f6e8, #ffffff 55%, #e8f6e8);
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro {
+  gap: 70px;
+  align-items: center;
+}
+
+.intro-text,
+.week {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.personal {
+  display: inline-block;
+  margin: 0 0 15px;
+  padding: 6px 20px;
+  border-radius: 15px;
+  color: #000000;
+  background: #a6caab;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Fredoka One", "Comfortaa", sans-serif;
+}
+
+h1 {
+  font-size: clamp(30px, 4vw, 36px);
+  line-height: 1.15;
+}
+
+h1 span {
+  color: #288032;
+  text-decoration: underline;
+}
+
+.intro-text > p:not(.personal) {
+  max-width: 400px;
+  margin: 14px 0 20px;
+  font-size: 16px;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 13px 25px;
+  border: 1px solid #288032;
+  border-radius: 15px;
+  font-size: 16px;
+  transition: .2s;
+}
+
+.button:hover {
+  box-shadow: 0 7px 16px #B2DAE2;
+}
+
+.button:active {
+  box-shadow: 0 10px 24px #A2D0CD;
+}
+
+.light {
+  background: #a6caab;
+}
+
+.outline {
+  background: white;
+}
+
+.week {
+  padding: 10px;
+  border-radius: 18px;
+  background: #a1c7a5;
+}
+
+.week > img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.week > span {
+  position: relative;
+  top: -26px;
+  left: 10px;
+  padding: 6px 18px;
+  border-radius: 10px;
+  color: white;
+  background: #288032;
+  font-size: 16px;
+}
+
+.week div {
+  display: flex;
+  gap: 10px;
+}
+
+.week div p {
+  flex: 1 1 0;
+  width: 50%;
+  min-width: 0;
+  margin: -12px 0 0;
+  padding: 7px;
+  border-radius: 8px;
+  background: white;
+  color: #777777;
+  font-size: 16px;
+  text-align: center;
+}
+
+.week b {
+  color: #000000;
+}
+
+.numbers {
+  gap: 15px;
+  margin: 45px 0;
+}
+
+.numbers p {
+  flex: 1 1 180px;
+  min-width: 0;
+  margin: 0;
+  padding: 12px;
+  border-radius: 15px;
+  color: #288032;
+  background: #eff9f0 url("../img/Rectangle 330.png") center/cover;
+  font-size: 18px;
+  text-align: center;
+}
+
+.numbers span {
+  color: #000000;
+  font-size: 11px;
+}
+
+.principles,
+.team {
+  text-align: center;
+}
+
+.principles h2,
+.team h2 {
+  font-size: 22px;
+}
+
+.principles > p,
+.team > p {
+  margin: 8px 0 20px;
+  font-size: 16px;
+}
+
+.principle-list {
+  gap: 15px;
+}
+
+.principles article {
+  flex: 1 1 190px;
+  min-width: 0;
+  min-height: 175px;
+  padding: 15px;
+  border: 1px solid #288032;
+  border-radius: 20px;
+  background: white;
+  text-align: left;
+}
+
+.principles img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  padding: 7px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.principle-eco img {
+  background: #B1EBB1;
+}
+
+.principle-farms img {
+  background: #E6DAB4;
+}
+
+.principle-bju img {
+  background: #7DC3BF;
+}
+
+.principle-price img {
+  background: #9CD5DF;
+}
+
+.principles h3 {
+  margin: 5px 0 18px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.principles article p {
+  clear: both;
+  margin: 0;
+  font-size: 16px;
+}
+
+.team {
+  margin-top: 40px;
+}
+
+.team-list {
+  gap: 15px;
+}
+
+.team article {
+  flex: 1 1 220px;
+  min-width: 0;
+  padding: 15px 20px;
+  border: 1px solid #a6caab;
+  border-radius: 15px;
+  background: #f4f7ff;
+  box-shadow: 0 3px 8px #a1c7a5;
+}
+
+.team img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.team h3 {
+  margin: 6px 0 0;
+  font-size: 18px;
+}
+
+.team b {
+  color: #777777;
+  font-size: 10px;
+}
+
+.team article p {
+  margin: 10px 0 0;
+  color: #555555;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 25px;
+  padding: 25px clamp(20px, 11%, 140px);
+  border-radius: 35px 35px 0 0;
+  background: #e8f6e8;
+}
+
+footer > div {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+footer b {
+  font-size: 13px;
+}
+
+footer p {
+  margin: 8px 0 0;
+  font-size: 12px;
+}
+
+.social {
+  display: inline-block;
+  margin-right: 12px;
+  border-radius: 50%;
+  transition: .2s;
+}
+
+.social:hover {
+  box-shadow: 0 7px 16px #B2DAE2;
+}
+
+.social:active {
+  box-shadow: 0 10px 24px #A2D0CD;
+}
+
+.social img {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+
+footer > div:last-child {
+  text-align: right;
+}
+
